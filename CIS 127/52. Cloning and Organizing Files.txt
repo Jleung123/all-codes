@@ -1,0 +1,12 @@
+#!/bin/bash
+#Name:  Jeremy Leung
+#Email: jeremy.leung59@myhunter.cuny.edu
+#Date: October 10, 2021
+#this script will clone a github repo and organize the files
+
+git clone https://github.com/HunterCSci127/CSci127
+cd CSci127
+mkdir myprojectfiles
+mv nestingPolygons.py myprojectfiles
+mkdir pictures
+mv *.png pictures

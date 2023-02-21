@@ -1,0 +1,21 @@
+#!/bin/bash
+#Name:  Jeremy Leung
+#Email: jeremy.leung59@myhunter.cuny.edu
+#Date: October 4, 2021
+#this script will create a directory csci127 with sub directories images with sub diredtories img, jpg, and gif
+#and files with sub directories with csv, and txt
+
+mkdir csci127
+cd csci127
+mkdir images
+mkdir files
+cd images
+mkdir png
+mkdir jpg
+mkdir gif
+cd ..
+cd files
+mkdir csv
+mkdir txt
+ls
+

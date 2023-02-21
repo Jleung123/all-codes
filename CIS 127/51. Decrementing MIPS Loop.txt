@@ -1,0 +1,11 @@
+#Name:  Jeremy Leung
+#Email: jeremy.leung59@myhunter.cuny.edu
+#Date: October 10, 2021
+#this script will loop from 100 to 0 by counting down by 25
+
+ADDI $s0, $zero, 100 #set s0 to 100
+ADDI $s1, $zero, 25  #use to decrement counter, $s0
+AGAIN: SUB $s0, $s0, $s1
+BEQ $s0, $zero, DONE
+J AGAIN
+DONE:  #To break out of the loop
