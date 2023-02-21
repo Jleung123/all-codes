@@ -1,0 +1,17 @@
+div.note
+{
+font-size: xx-small;
+color: red ;
+}
+
+div.output
+{
+font-size: large;
+}
+
+div.block
+{
+width: 500px;
+border: 2px solid blue ;
+background: #cccccc;
+}
