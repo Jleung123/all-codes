@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Exam31</title>
+	<style type="text/css">
+		input[type="text"]
+		{
+			background-color:#DEDEE6;border:4px solid orange;margin:2px;
+		}
+		input[type="button"],input[type="reset"]
+		{
+			color:white;background-color:black;border:1px solid white;margin:2px;
+		}
+	</style>
+	<script>
+	function are()
+	{
+		var x=document.getElementById("r");
+		var y=document.getElementById("area"); 
+		y.value=3.13*parseFloat(x.value) * parseFloat(x.value);
+	}
+	function per()
+	{
+		var x=document.getElementById("r");
+		var y=document.getElementById("circ"); 
+		y.value=2*3.13*parseFloat(x.value)
+	}
+	function bot()
+	{
+		are(); per();
+	
+	}
+	</script>
+	</head>
+		<body>
+		<form style="color:orange">
+			<div style="background-color:green;border:solid black 7px; border-radius: 25px; width:400px;">
+			<div style="color:orange;background-color:black;border:solid black 2px; margin-bottom:2px;text-align:center;">CIRCLE PROBLEM</div>
+			<div style="width:150px;float:left">   <label>Enter radius:</label></div><div><input type = "text" id = "r"/></div>
+			<div style="width:150px;float:left">   <label>Area:</label></div><div><input type = "text" id = "area"/></div> 
+			<div style="width:150px;float:left">   <label>Circumference:</label></div><div><input type = "text" id = "circ"/></div>
+			<div>
+				<center>
+					<input type = "button" value = "Area" style = "color:orange" onclick = "are()"/>
+					<input type = "button" value = "Perimeter" style = "color:orange" onclick = "per ()"/>
+					<input type = "button" value = "Both" style = "color:orange" onclick = "bot ()"/>
+					<input type = "reset" value = "Clear" style = "color:orange" />
+				</center>
+			</div> 
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>exer66</title>
+			<style type="text/css">
+				input[type="text"]{background-color:#DEDEE6;border:4px solid black;margin:2px;}
+				input[type="button"],input[type="reset"]{color:white;background-color:black;border:1px solid white;margin:2px;}
+			</style>
+			<script>
+				function one()
+				{
+					var x=document.getElementById("input");
+					var y=document.getElementById("output1");
+					y.value=parseInt(x.value)+1;
+				}
+				function two()
+				{
+					var x=document.getElementById("input");
+					var y=document.getElementById("output2");
+					y.value=parseInt(x.value)-1;
+				}
+				function three()
+				{
+					var x=document.getElementById("input");
+					var y=document.getElementById("output1");
+					var z=document.getElementById("output2");
+					y.value=parseInt(x.value)+1;
+					z.value=parseInt(x.value)-1;
+				}
+			</script>
+	</head>
+	<body>
+		<form>
+			<div style="background-color:orange;border:solid black 7px; border-radius: 25px; width:400px;">
+			<div style="color:white;background-color:black;border:solid black 2px; margin-bottom:2px;text-align:center;">INC/DEC PROBLEM</div>
+			<div style="width:150px;float:left">   <label>Enter Integer:</label> </div>	<div> <input id="input" 	type="text" /> </div>
+			<div style="width:150px;float:left">   <label>Increment:</label>   </div>   <div> <input id="output1" 	type="text" /> </div> 
+			<div style="width:150px;float:left">   <label>Decrement:</label>   </div>   <div> <input id="output2"	type="text" /> </div> 
+			<div>
+				<center>
+					<input type="button" value="Increment" style="color:white;"  onclick="one()"	/>
+					<input type="button" value="Decrement" style="color:white;"	 onclick="two()"	/>
+					<input type="button" value="Both" style="color:white;"	 onclick="three()"	/>
+					<input type="reset" value="Clear" style="color:white;"/>
+				</center>
+			</div> 
+			</div>
+		</form>
+	</body>
+</html>

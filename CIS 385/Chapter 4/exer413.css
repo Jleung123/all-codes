@@ -1,0 +1,15 @@
+table{
+	border: solid black 7px; border-radius: 25px; background: orange
+}
+th{
+	color: white;
+}
+th.header{
+	background: black; outline: solid black 2px
+}
+.button{
+	color: white; background: black; border: solid white 2px
+}
+.textborder{
+	border: solid black 4px
+}

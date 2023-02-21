@@ -1,0 +1,55 @@
+table.main_table{
+	border:solid blue 5px;
+}
+td.problems{
+	border:solid orange 10px;
+}
+td.divider{
+	background:orange;color:white;text-align:center;border-radius:100%;
+	border:solid black 5px;text-aligh:center;
+}
+table.problem1{
+	background-color:green; border:solid blackc 7px; border-radius:25px;
+}
+th.problem1_header{
+	color:white; background-color:black; border:solid black 2px;
+	outline:solid black 2px;
+}
+input.textfield_style{
+	background-color:#DEDEE6; border:4px solid black;
+}
+input.button_style{
+	color:white; background-color:black; border:1px solid white;
+}
+table.problem2{
+	color:black; background-color:blue; border:solid black 6px;
+	border-width:4px;
+}
+th.problem2_header{
+	color:white; background-color:black; outline-class:solid;
+	outline-width:2px; border:2px solid black;
+}
+label.red{
+	color:red;
+}
+label.white{
+	color:white;
+}
+input.textfield_style1{
+	background-color:#DEDEE6; border:5px solid red;
+}
+input.textfield_style2{
+	background-color:#CCCCCC; border:5px solid black;
+}
+input.button_style_reg{
+	color:black; background-color:white; border:5px solid black;
+}
+input.button_style_exp{
+	color:red; background-color: white;border:5px solid black;
+}
+input.button_style_ove{
+	color:orange; background-color:black; border:5px solid white;
+}
+input.button_style_clr{
+	color:white; background-color:black; border:5px solid white;
+}

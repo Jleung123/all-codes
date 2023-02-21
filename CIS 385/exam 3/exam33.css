@@ -1,0 +1,33 @@
+form
+{
+	color: orange
+}
+input[type="text"]
+{
+	background-color:#DEDEE6;border:4px solid orange;margin:2px;
+}
+input[type="button"],input[type="reset"]
+{
+	color:orange;background-color:black;border:1px solid white;margin:2px;
+}
+div.title
+{
+	background-color:green;border:solid black 7px; border-radius: 25px; width:400px;
+}
+.header
+{
+	color:orange;background-color:black;border:solid black 2px; 
+	margin-bottom:2px;text-align:center;
+}
+.test3div
+{
+	float:left;width:150px;margin:2px;
+}
+.test3div2
+{
+	float:left;;margin:2px;
+}
+.label
+{
+	width:150px;float:left;
+}

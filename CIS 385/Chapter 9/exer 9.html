@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<script>
+		document.cookie="user1=johndoe1";
+		document.cookie="user2=johndoe2";
+		document.cookie="user3=johndoe3";
+		document.cookie="user4=johndoe4";
+		alert(document.cookie)
+		function createCookie(name,value)
+		{
+			document.cookie=name+"="+value;
+			alert(document.cookie)
+		}
+		createCookie("user5","johndoe5")
+		document.cookie="user6 = johndoe6; expires=Tue, 29 Oct 2019 09:27:39 GMT; path=/"
+		alert(document.cookie)
+		function setCookie(name,value, days)
+		{
+			var d = new Date();
+			d.setTime(d.getTime() + (days*24*60*60*1000));
+			var expires = "expires="+ d.toUTCString();
+			document.cookie = name + "=" + value + ";" + expires + ";path=/";
+			alert(document.cookie)
+		}
+		setCookie("user7", "johndoe7", 10)
+		setCookie("user8", "mariejane", 10)
+		function delCookie(name)
+		{
+			var d = new Date();
+			d.setTime(d.getTime() + ((24*60*60*1000)*(-1)));
+			var expires = "expires="+ d.toUTCString();
+			document.cookie = name + "=" + value + ";" + expires + ";path=/";
+			alert(document.cookie)
+		}
+		function getCookie
+		{
+			var x = document.cookie.split("; ");
+			for (var )
+		}
+		delCookie("user9")
+		alert(document.cookie)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

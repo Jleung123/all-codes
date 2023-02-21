@@ -1,0 +1,23 @@
+table.maintable{
+	border:solid red 5px;
+}
+table.table1{
+	border: solid black 7px; border-radius: 25px; background: orange;
+}
+table.table2{
+	border-radius: 0 0 25px 25px; background: red;
+}
+td.divider{
+	background:black; color:white; text-align:center;
+	border-radius:100%; border:solid black 5px;
+}
+th.second-table-header{
+	color: white; background: black; outline: solid black 2px;
+	border:solid black 5px;
+}
+.textborder{
+	border: solid black 4px
+}
+.buttonborder{
+	color: white; background: black; border: solid white 2px;
+}

@@ -1,0 +1,49 @@
+<html>
+<head>
+<style type="text/css">
+table,td,input[type="button"],input[type="text"]{border:solid black 2px;font-size:small;}
+.division{border:solid black 2px;background-color:#CCCCCC;margin:2px;padding:1px;font-size:small;}
+th{text-align:center;background:black; color:white;padding:4px;}
+div.v0{ width:100%;}
+div.v1{ width:50%; margin:0px auto; background-color:#EEEEEE;}
+</style>
+<title>COOKIE MANAGER</title>
+</head>
+<body onload="details()">
+<div class="v0"><div class="v1">
+	<div class="division" style="font-size:1.5em;text-align:center;background:black; color:white;">COOKIE MANAGER</div>
+	<div class="division">
+		Name:<input type="text"size="10">
+		Value: <input  type="text"size="10">
+		<input type="button"value="SetCookie"/>
+		<input type="button"value="Clear" />
+	</div>
+	<div class="division">
+		Name:<input type="text"size="10">
+		Value: <input type="text"size="10">
+		<input type="button" value="GetCookie" />
+		<input type="button"value="Clear" />
+	</div>
+	<div class="division">
+		Name:<input type="text" size="10">
+		<input type="button"value="DelCookie" />
+		<input type="button"value="DelAllCookies" />
+		<input type="button"value="Clear" />
+	</div>
+	<div class="division">
+		<input type="text" size="35">
+		<input type="button" value="RawCookie"/>
+		<input type="button"value="Clear"/>
+	</div>
+	
+<div id='info' class="division">
+
+	<table style='width:50%;'>
+	<tr><th colspan='2'>COOKIE LISTING</th></tr>
+	<tr><th>NAME</th><th>VALUE</th></tr>
+	<tr><td style='width:10;'>USER1</td><td style='width:10;'>123</td></tr>
+	</table>
+	
+</div>
+</body> 
+</html>

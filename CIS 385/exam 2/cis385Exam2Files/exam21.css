@@ -1,0 +1,13 @@
+table.problem1{
+	background-color:green; border:solid blackc 7px; border-radius:25px;
+}
+th.problem1_header{
+	color:white; background-color:black; border:solid black 2px;
+	outline:solid black 2px;
+}
+input.textfield_style{
+	background-color:#DEDEE6; border:4px solid black;
+}
+input.button_style{
+	color:white; background-color:black; border:1px solid white;
+}
