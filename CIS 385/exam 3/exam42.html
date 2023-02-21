@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><title>EXAM4</title>
+    <style type='text/css'>
+        table{background-color:navy;border-radius:25px;}
+        th{color:white;background-color:black;border:solid black 2px;outline:solid black 2px;}
+        input[type='text']{background-color:#DEDEE6;border:4px solid black;}
+        input[type='button'],input[type='reset']{color:white;background-color:black;border:1px solid white;}
+        label{color:white;}
+    </style>
+    <script type="text/javascript">
+        function doublenum()
+        {
+            var num=document.getElementById("num");
+            var ans1=document.getElementById("ans1");
+            ans1.value=2* parseInt(num.value);
+        }
+        function tripplenum()
+        {
+            var num=document.getElementById("num");
+            var ans1=document.getElementById("ans2");
+            ans2.value=3* parseInt(num.value);
+        }
+        function doubletripple()
+        {
+            doublenum();
+            tripplenum();
+        }
+        function isInteger()
+        {
+            var flag=true;
+            var x=document.getElementById("num");
+            if (x.value==null || x.value=="") { alert("Integer Field Empty");flag=false;}
+            else if (x.value==" ") { alert("Space is not Valid"); flag=false;}
+            else if (isNaN(x.value)) { alert("Value Not A Number");  flag=false;}
+            else if ((parseFloat(x.value))%1 !=0 ) { alert("Value Is Not An Integer");flag=false;}
+            return flag;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <table>
+        <tr><th colspan="2">DOUBLE/TRIPPLE PROBLEM</th></tr>
+        <tr> <td><label>Enter Integer:</label></td><td> <input  id="num" type="text" onfocus="document.getElementById('num').value='';"
+
+                                                                required value="Enter an integer here" /> </td> </tr>
+        <tr> <td><label>Double:</label></td><td><input  id="ans1" type="text" readonly /> </td> </tr>
+        <tr> <td><label>Tripple:</label></td><td><input  id="ans2" type="text" readonly /> </td> </tr>
+        <tr>
+            <td colspan="2" >
+                <center>
+                    <input type="button" value="Double"   		onclick="if(isInteger()) doublenum();"	/>
+                    <input type="button" value="Tripple" 		onclick="if(isInteger()) tripplenum();" />
+                    <input type="button" value="Both"      		onclick="if(isInteger()) doubletripple();"/>
+                    <input type="reset" value="Clear" />
+                </center>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

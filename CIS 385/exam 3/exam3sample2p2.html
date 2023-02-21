@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EXAM3 SAMPLE2</title>
+<style type="text/css">
+form{color:black;background-color:blue;border:4px solid red;width:300px;margin:1px;padding:1px;}
+input[type="text"]{background-color:#DEDEE6;border:4px solid red;width:100px;}
+input[type="button"],input[type="reset"]{color:white;background-color:red;border:4px solid black;margin:2px;}
+div.title{color:white;background-color:black;float: left; width: 300px; text-align:center;}
+form{margin:0px;padding:0px;}
+.test3div{float:left;width:150px;margin:2px;}
+.test3div2{float:left;;margin:2px;}
+.test3br{clear;both;}
+.center{clear;both;text-align:center;}
+label{color: white;}
+</style>
+<script src="exam3sample2p2.js"></script>
+</head>
+<body>
+<form>
+<div class="title"><label>RECTAGLE PROBLEM</label></div>
+<br class="test3br" />
+<div class="test3div"><label>Enter Length:</label></div>
+<div class="test3div2"><input type="text"  id="len" /></div>
+<div class="test3div"><label>Enter Width:</label></div>
+<div class="test3div2"><input type="text"  id="wid" /></div>
+<br class="test3br" />
+<div class="test3div"><label>Area:</label></div>
+<div class="test3div2"><input type="text" readonly id="area" /></div>
+<br class="test3br" />
+<div class="test3div"><label>Perimeter:</label></div>
+<div class="test3div2"><input type="text" readonly  id="perimeter" /></div>
+
+<p class="test3br" />
+<br />
+<div class="center">
+	<input type="button" value="Area" 		onclick="one()"		/> 
+	<input type="button" value="Perimeter" 	onclick="two()"/> 
+	<input type="button" value="Both" 		onclick="three()"/> 
+	<input type="reset" value="Clear" 	   />
+</div>
+</form>
+</body>
+</html>
