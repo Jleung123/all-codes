@@ -1,0 +1,6 @@
+P = float(input("Enter the princiapl amounr that was oiginally deposited into the account: "))
+r = float(input("Enter the annual interest rate: "))
+n = float(input("Enter the number of times the interest is compounded: "))
+t = float(input("Enter the number of years that the accmount it will be left to earn interest: "))
+A = P*(1+ (r/n))**(n*t)
+print("the amount of money in this account after ", t , " years\nAmount in account: $", A)
